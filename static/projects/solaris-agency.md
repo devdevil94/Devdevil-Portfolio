@@ -7,6 +7,7 @@ description: >-
   This is a website for a fictional digital agency.
 tech:
   - JavaScript
+  - JQuery
   - CSS
   - HTML
 ---

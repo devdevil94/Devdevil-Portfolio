@@ -6,7 +6,8 @@ url: https://devdevil94.github.io/Canella-Restaurant
 description: >-
   This is a website for a fictional Italian restaurant.
 tech:
-  - JavaScript (JQuery)
+  - JavaScript
+  - JQuery
   - CSS
   - HTML
 ---
