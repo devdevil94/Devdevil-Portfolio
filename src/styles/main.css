@@ -65,3 +65,37 @@
     font-size: 3.6rem;
   }
 }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: none;
+  }
+  .projectContainer {
+    flex-direction: row;
+    padding: 5rem 0;
+  }
+  .projectContainer--reverse {
+    flex-direction: row-reverse;
+  }
+  .projectContainer__img {
+    width: 50%;
+  }
+  .projectContainer__info {
+    padding-left: 2rem;
+    width: 50%;
+  }
+  .projectContainer--reverse .projectContainer__info {
+    padding-right: 2rem;
+    padding-left: 0;
+  }
+  .projectContainer__title {
+    margin-top: 0;
+    font-size: 3.5rem;
+  }
+}
