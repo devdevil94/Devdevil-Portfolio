@@ -7,4 +7,5 @@
   --secondary-text-color: #58647b;
   --grey-text-color: #58647b;
   --grey-light-color: #eaeaea;
+  --primary-gradient: linear-gradient(to right, #9d50bb, #6e48aa);
 }

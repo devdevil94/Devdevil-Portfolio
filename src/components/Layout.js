@@ -1,6 +1,6 @@
 import React from "react";
 
-// import "../styles/global.css"
+import "animate.css/animate.min.css";
 import "../styles/main.css";
 import Header from "./Header";
 
