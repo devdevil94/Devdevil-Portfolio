@@ -12,6 +12,7 @@ const IndexPage = ({ data }) => {
         <ScrollAnimation
           key={id}
           animateOnce={true}
+          // duration={0.7}
           animateIn={i % 2 === 0 ? "fadeInRight" : "fadeInLeft"}
         >
           <div
@@ -37,7 +38,7 @@ const IndexPage = ({ data }) => {
                 {(project.tech || []).map((tech, i) => (
                   <li
                     key={i}
-                    className="text-secondary bg-white rounded projectContainer__techItem"
+                    className="text-primary bg-white rounded projectContainer__techItem"
                   >
                     {tech}
                   </li>
@@ -46,7 +47,7 @@ const IndexPage = ({ data }) => {
               <a
                 href={project.url}
                 target="_blank"
-                className="bg-primary text-white uppercase rounded projectContainer__visitBtn"
+                className="text-white uppercase rounded projectContainer__visitBtn"
               >
                 Visit Website
               </a>
