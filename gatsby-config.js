@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Devdevil Portfolio`,
-    description: `I am a web developer from Oman. I specialize in  JavaScript, CSS, HTML, and React.js framework`,
+    description: `I am a web developer from Oman. I specialize in  JavaScript, CSS, HTML, and ReactJS framework`,
     author: `Saud Alawi`,
   },
   plugins: [

@@ -24,31 +24,23 @@ export default function Header() {
 
   return (
     <header className="bg-white header">
-      <div className="container">
-        <div className="header__contentWrapper">
-          <ScrollAnimation
-            animateIn="fadeInDown"
-            offset={50}
-            animateOnce={true}
-          >
-            <div className="header__content">
-              <Img
-                fluid={data.avatar.childImageSharp.fluid}
-                alt={data.site.siteMetadata.author}
-                className="rounded-full header__img"
-              />
-              <h1 className="header__devName">
-                {data.site.siteMetadata.author}
-              </h1>
-              <p className="text-grey header__description">
-                {data.site.siteMetadata.description}
-              </p>
-              <a href="#!" className="text-white uppercase header__hireMeBtn">
-                Hire Me
-              </a>
-            </div>
-          </ScrollAnimation>
-        </div>
+      <div className="header__contentWrapper">
+        <ScrollAnimation animateIn="fadeInDown" offset={50} animateOnce={true}>
+          <div className="header__content">
+            <Img
+              fluid={data.avatar.childImageSharp.fluid}
+              alt={data.site.siteMetadata.author}
+              className="rounded-full header__img"
+            />
+            <h1 className="header__devName">{data.site.siteMetadata.author}</h1>
+            <p className="text-grey header__description">
+              {data.site.siteMetadata.description}
+            </p>
+            <a href="#!" className="text-white uppercase header__hireMeBtn">
+              Hire Me
+            </a>
+          </div>
+        </ScrollAnimation>
       </div>
     </header>
   );
