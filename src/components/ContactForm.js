@@ -4,7 +4,6 @@ export default function ContactForm() {
   return (
     <form className="contactForm validate-form">
       <span className="contactForm__title">Get in touch</span>
-
       <div className="field validate-input" data-validate="Name is required">
         <input
           className="field__input"
