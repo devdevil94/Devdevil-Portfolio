@@ -13,7 +13,8 @@ html {
   font-size: 10px;
 }
 body {
-  background-color: rgb(240, 246, 252);
+  background-color: var(--body-bg-color);
+  /* background-color: rgb(240, 246, 252); */
 }
 
 div,
@@ -34,12 +35,22 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  outline: none;
 }
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+textarea,
+input {
+  outline: none;
+  border: none;
+}
+textarea:focus,
+input:focus {
+  /* border-color: transparent !important; */
 }
 
 /* ------------- UTILITIES ------------- */
