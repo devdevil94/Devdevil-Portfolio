@@ -87,6 +87,164 @@
   background-color: var(--secondary-color);
 }
 
+/* ------------- Contact Form ------------- */
+.footer {
+  display: flex;
+  padding: 3rem 0;
+}
+.footer__column {
+  width: 50%;
+  padding: 0 4rem;
+}
+.footer__column:first-child {
+}
+.contactForm {
+  /* width: 390px; */
+}
+
+.contactForm__title {
+  display: block;
+  /* font-family: Montserrat-ExtraBold; */
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 36px;
+}
+
+input.field__input {
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 50px;
+}
+
+input.field__input[name="email"] {
+  padding: 0 30px 0 54px;
+}
+
+textarea.field__input {
+  min-height: 150px;
+  border-radius: 25px;
+  padding: 14px 30px;
+}
+
+/*---------------------------------------------*/
+.field {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.field__input {
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.field__inputFocus {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(132, 106, 221, 0.5);
+}
+
+.field__input:focus + .field__inputFocus {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 60px 25px;
+    opacity: 0;
+  }
+}
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 60px 25px;
+    opacity: 0;
+  }
+}
+
+.field__inputIcon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  pointer-events: none;
+  color: #aaaaaa;
+  font-size: 15px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.field__input:focus + .field__inputFocus + .field__inputIcon {
+  color: #846add;
+  padding-left: 22px;
+}
+
+.contactForm__btnContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.contactForm__btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background: #846add;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contactForm__btn:hover {
+  background: #333333;
+}
+
 /* ------------- Media Queries ------------- */
 @media (min-width: 300px) {
   .header__devName {
