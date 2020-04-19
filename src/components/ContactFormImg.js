@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactFormImg() {
   return (
-    <div className="contact">
+    <div className="contactImg container-center">
       <svg
         id="060e19aa-3f7d-4f07-aa7e-820f8d371f55"
         data-name="Layer 1"

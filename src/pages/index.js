@@ -31,9 +31,9 @@ const IndexPage = ({ data }) => {
               <p className="text-grey projectContainer__description">
                 {project.description}
               </p>
-              <h3 className="text-dark projectContainer__techListHeader">
+              {/* <h3 className="text-dark projectContainer__techListHeader">
                 Technologies
-              </h3>
+              </h3> */}
               <ul className="projectContainer__techList">
                 {(project.tech || []).map((tech, i) => (
                   <li
