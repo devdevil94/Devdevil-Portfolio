@@ -3,7 +3,7 @@ import React from "react";
 export default function ContactForm() {
   return (
     <form className="contactForm validate-form">
-      <span className="contactForm__title">Get in touch</span>
+      <h2 className="text-dark contactForm__title">Get in touch</h2>
       <div className="field validate-input" data-validate="Name is required">
         <input
           className="field__input"
@@ -43,7 +43,7 @@ export default function ContactForm() {
       </div>
 
       <div className="contactForm__btnContainer">
-        <button className="contactForm__btn">Send</button>
+        <button className="uppercase contactForm__btn">Send</button>
       </div>
     </form>
   );
