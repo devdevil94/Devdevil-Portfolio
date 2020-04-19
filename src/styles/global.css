@@ -1,5 +1,8 @@
 /* ------------- DEFAULT ------------- */
 @import url("portfolio.theme.css");
+@import url("fontawesome.min.css");
+@import url("brands.min.css");
+@import url("solid.min.css");
 * {
   margin: 0;
   padding: 0;
