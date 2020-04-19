@@ -10,6 +10,15 @@ module.exports = {
     title: `Devdevil Portfolio`,
     description: `I am a web developer from Oman. I specialize in  JavaScript, CSS, HTML, and ReactJS framework`,
     author: `Saud Alawi`,
+    skills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "JQuery",
+      "ReactJS",
+      "API",
+    ],
   },
   plugins: [
     {
