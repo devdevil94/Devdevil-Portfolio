@@ -4,7 +4,12 @@ import Img from "gatsby-image";
 import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Header() {
-  const data = useStaticQuery(graphql`
+  const {
+    avatar,
+    site: {
+      siteMetadata: { author, skills, description },
+    },
+  } = useStaticQuery(graphql`
     query {
       avatar: file(relativePath: { eq: "myAvatar.png" }) {
         childImageSharp {
@@ -17,6 +22,7 @@ export default function Header() {
         siteMetadata {
           author
           description
+          skills
         }
       }
     }
@@ -33,16 +39,21 @@ export default function Header() {
           >
             <div className="header__content">
               <Img
-                fluid={data.avatar.childImageSharp.fluid}
-                alt={data.site.siteMetadata.author}
+                fluid={avatar.childImageSharp.fluid}
+                alt={author}
                 className="rounded-full header__img"
               />
-              <h1 className="header__devName">
-                {data.site.siteMetadata.author}
-              </h1>
-              <p className="text-grey header__description">
-                {data.site.siteMetadata.description}
-              </p>
+              <h1 className="header__devName">{author}</h1>
+              <p className="text-grey header__description">{description}</p>
+              {/*<h2>MySkills</h2>
+               <ul className="header__skillsList">
+                {skills.map((skill, i) => (
+                  <li key={i} className="header__skillsItem">
+                    // {i !== skills.length - 1 ? ` ${skill} |` : skill}
+                    {skill}
+                  </li>
+                ))}
+              </ul> */}
               <a href="#!" className="text-white uppercase header__hireMeBtn">
                 Hire Me
               </a>
