@@ -3,6 +3,7 @@
 .header {
   height: 100vh;
   width: 100%;
+  background-color: whitesmoke;
 }
 .header .container {
   height: 100%;
@@ -44,6 +45,9 @@
 .header__hireMeBtn:hover {
   background-color: var(--primary-color);
   color: white;
+}
+.header__skillsList {
+  display: inline-flex;
 }
 
 /* ------------- Projects Section ------------- */
@@ -90,6 +94,7 @@
 /* ------------- Contact Form ------------- */
 .footer {
   padding: 3rem 0;
+  background-color: whitesmoke;
 }
 .footer .container {
   display: flex;
