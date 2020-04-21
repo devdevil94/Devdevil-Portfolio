@@ -7,7 +7,12 @@ export default function Header() {
   const {
     avatar,
     site: {
-      siteMetadata: { author, skills, description },
+      siteMetadata: {
+        author,
+        skills,
+        description,
+        accounts: { github },
+      },
     },
   } = useStaticQuery(graphql`
     query {
@@ -23,6 +28,9 @@ export default function Header() {
           author
           description
           skills
+          accounts {
+            github
+          }
         }
       }
     }
@@ -45,6 +53,13 @@ export default function Header() {
               />
               <h1 className="header__devName">{author}</h1>
               <p className="text-grey header__description">{description}</p>
+              <ul className="socialList">
+                <li className="socialList__item">
+                  <a href={github} target="_blank">
+                    <i className="fab fa-github"></i>
+                  </a>
+                </li>
+              </ul>
               {/*<h2>MySkills</h2>
                <ul className="header__skillsList">
                 {skills.map((skill, i) => (
