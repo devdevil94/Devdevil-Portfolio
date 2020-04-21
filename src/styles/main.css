@@ -38,9 +38,6 @@
   letter-spacing: 1px;
   background: var(--primary-gradient);
   border-radius: 2.5rem;
-  /* border: .4rem solid; 
-    border-image-source: var(--primary-gradient);
-    border-image-slice: 1; */
 }
 .header__hireMeBtn:hover {
   background-color: var(--primary-color);
@@ -57,6 +54,8 @@
 .projectsSection__header {
   text-align: center;
   font-size: 3.6rem;
+  font-family: "Oswald";
+  letter-spacing: 1px;
 }
 .projectContainer {
   padding: 2rem 0;
@@ -65,7 +64,7 @@
 }
 
 .projectContainer__title {
-  margin: 2rem 0;
+  margin: 2rem 0 0.5rem 0;
   font-size: 3rem;
   font-family: "Oswald";
   letter-spacing: 1px;
@@ -81,26 +80,57 @@
   flex-wrap: wrap;
 }
 .projectContainer__techItem {
-  padding: 0.5rem 0.85rem;
-  margin: 0.5rem 0.5rem 0 0;
+  padding: 0.3rem 0.4rem;
+  margin: 0.85rem 0.85rem 0 0;
   font-size: 1.4rem;
-  border-bottom: 2px solid var(--primary-color);
-  /* border: 1px solid var(--secondary-color); */
+  /* border-bottom: 2px solid var(--primary-color); */
+  position: relative;
+  transition: all 0.5s;
+}
+.projectContainer__techItem:hover {
+  color: white;
+}
+.projectContainer__techItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--primary-gradient);
+  transition: all 0.5s;
+  z-index: -1;
+}
+.projectContainer__techItem:hover::after {
+  height: 100%;
+}
+.projectContainer__description {
+  margin-top: 2rem;
+}
+.projectContainer__btnsWrapper {
+  margin: 2rem 0;
 }
 .projectContainer__websiteBtn,
 .projectContainer__codeBtn {
   display: inline-block;
-  padding: 1rem 2rem;
-  margin: 2rem 0;
+  padding: 0.75rem 2rem;
   font-size: 1.5rem;
+  font-weight: bold;
+  /* letter-spacing: 1px; */
   transition: all 0.3s ease-in-out;
-  background: var(--primary-gradient);
+  border: 0.3rem solid;
+  border-image-source: var(--primary-gradient);
+  border-image-slice: 1;
 }
 .projectContainer__visitBtn:hover {
   background-color: var(--secondary-color);
 }
 .projectContainer__websiteBtn {
-  margin-right: 0.5rem;
+  background: var(--primary-gradient);
+  margin-right: 0.85rem;
+}
+.projectContainer__codeBtn {
+  margin-top: 0.5rem;
 }
 
 /* ------------- Contact Form ------------- */
@@ -224,7 +254,6 @@ textarea.field__input {
 
 .field__input:focus + .field__inputFocus + .field__inputIcon {
   color: #6e48aa;
-  /* color: #846add; */
   padding-left: 22px;
 }
 
