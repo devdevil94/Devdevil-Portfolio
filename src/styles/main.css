@@ -32,7 +32,6 @@
 .header__hireMeBtn {
   display: inline-block;
   padding: 1.5rem 2.5rem;
-  margin: 2rem 0;
   transition: all 0.3s ease-in-out;
   font-weight: bold;
   letter-spacing: 1px;
@@ -117,13 +116,11 @@
   font-size: 1.5rem;
   font-weight: bold;
   /* letter-spacing: 1px; */
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
   border: 0.3rem solid;
   border-image-source: var(--primary-gradient);
   border-image-slice: 1;
-}
-.projectContainer__visitBtn:hover {
-  background-color: var(--secondary-color);
+  box-sizing: border-box;
 }
 .projectContainer__websiteBtn {
   background: var(--primary-gradient);
@@ -131,6 +128,9 @@
 }
 .projectContainer__codeBtn {
   margin-top: 0.5rem;
+}
+.projectContainer__websiteBtn:hover,
+.projectContainer__codeBtn:hover {
 }
 
 /* ------------- Contact Form ------------- */
