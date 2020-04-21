@@ -42,6 +42,12 @@
   background-color: var(--primary-color);
   color: white;
 }
+.socialList {
+  margin-bottom: 2rem;
+}
+.socialList__item a {
+  font-size: 3rem;
+}
 .header__skillsList {
   display: inline-flex;
 }
@@ -129,9 +135,9 @@
 .projectContainer__codeBtn {
   margin-top: 0.5rem;
 }
-.projectContainer__websiteBtn:hover,
+/* .projectContainer__websiteBtn:hover,
 .projectContainer__codeBtn:hover {
-}
+} */
 
 /* ------------- Contact Form ------------- */
 .footer {
