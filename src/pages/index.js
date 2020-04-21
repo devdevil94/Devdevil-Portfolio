@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <section className="projectsSection">
-        <h2 className="text-dark projectsSection__header">My Projects</h2>
+        <h2 className="text-dark uppercase projectsSection__header">My Work</h2>
         {(edges || []).map(({ node: { id, frontmatter: project } }, i) => (
           <ScrollAnimation
             key={id}
@@ -30,9 +30,6 @@ const IndexPage = ({ data }) => {
                 <h3 className="text-dark projectContainer__title">
                   {project.title}
                 </h3>
-                <p className="text-grey projectContainer__description">
-                  {project.description}
-                </p>
                 {/* <h3 className="text-dark projectContainer__techListHeader">
                 Technologies
               </h3> */}
@@ -46,11 +43,15 @@ const IndexPage = ({ data }) => {
                     </li>
                   ))}
                 </ul>
-                <div>
+                <p className="text-grey projectContainer__description">
+                  {project.description}
+                </p>
+
+                <div className="projectContainer__btnsWrapper">
                   <a
                     href={project.url}
                     target="_blank"
-                    className="text-white uppercase rounded projectContainer__websiteBtn"
+                    className="text-white uppercase projectContainer__websiteBtn"
                   >
                     Website
                   </a>
@@ -58,7 +59,7 @@ const IndexPage = ({ data }) => {
                     <a
                       href={project.repo}
                       target="_blank"
-                      className="text-white uppercase rounded projectContainer__codeBtn"
+                      className="text-primary uppercase projectContainer__codeBtn"
                     >
                       Code
                     </a>
