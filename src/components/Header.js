@@ -55,7 +55,7 @@ export default function Header() {
               <p className="text-grey header__description">{description}</p>
               <ul className="socialList">
                 <li className="socialList__item">
-                  <a href={github} target="_blank">
+                  <a href={github} target="_blank" className="text-primary">
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
