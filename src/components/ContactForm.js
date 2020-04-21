@@ -2,7 +2,14 @@ import React from "react";
 
 export default function ContactForm() {
   return (
-    <form className="contactForm validate-form">
+    <form
+      method="POST"
+      name="contact-form"
+      className="contactForm validate-form"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="contact-form" />
       <h2 className="text-dark contactForm__title">Get in touch</h2>
       <div
         className="field validate-input"
