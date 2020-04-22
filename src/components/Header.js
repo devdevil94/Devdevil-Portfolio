@@ -9,7 +9,7 @@ export default function Header() {
     site: {
       siteMetadata: {
         author,
-        skills,
+        // skills,
         description,
         accounts: { github, freelancer },
       },
@@ -41,22 +41,23 @@ export default function Header() {
     <header className="bg-white header">
       <div className="container">
         <div className="header__contentWrapper">
-          <ScrollAnimation
-            animateIn="fadeInDown"
-            offset={50}
-            animateOnce={true}
-          >
+          <ScrollAnimation animateIn="fadeInDown" animateOnce={true}>
             <div className="header__content">
               <Img
                 fluid={avatar.childImageSharp.fluid}
                 alt={author}
                 className="rounded-full header__img"
               />
-              <h1 className="header__devName">{author}</h1>
+              <h1 className="header__devName">I'm {author}</h1>
               <p className="text-grey header__description">{description}</p>
               <ul className="socialList">
                 <li className="socialList__item">
-                  <a href={github} target="_blank" className="text-primary">
+                  <a
+                    href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary"
+                  >
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
@@ -73,6 +74,7 @@ export default function Header() {
               <a
                 href={freelancer}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-white uppercase header__hireMeBtn"
               >
                 Hire Me
