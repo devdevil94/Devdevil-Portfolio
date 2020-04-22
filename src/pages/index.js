@@ -3,11 +3,13 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import ScrollAnimation from "react-animate-on-scroll";
 import Layout from "./../components/Layout";
+import SEO from "./../components/SEO";
 
 const IndexPage = ({ data }) => {
   const edges = data.allMarkdownRemark.edges;
   return (
     <Layout>
+      <SEO title="Home" />
       <section className="projectsSection">
         <h2 className="text-dark uppercase projectsSection__header">My Work</h2>
         {(edges || []).map(({ node: { id, frontmatter: project } }, i) => (
