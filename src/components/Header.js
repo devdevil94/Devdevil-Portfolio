@@ -72,6 +72,7 @@ export default function Header() {
               </ul> */}
               <a
                 href={freelancer}
+                target="_blank"
                 className="text-white uppercase header__hireMeBtn"
               >
                 Hire Me
