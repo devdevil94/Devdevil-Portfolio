@@ -12,6 +12,7 @@ module.exports = {
     author: `Saud Alawi`,
     accounts: {
       github: `https://github.com/devdevil94`,
+      freelancer: `https://www.freelancer.com/u/devdevil94`,
     },
     skills: [
       "HTML5",
