@@ -53,6 +53,7 @@ const IndexPage = ({ data }) => {
                   <a
                     href={project.url}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white uppercase projectContainer__websiteBtn"
                   >
                     Website
@@ -61,6 +62,7 @@ const IndexPage = ({ data }) => {
                     <a
                       href={project.repo}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-primary uppercase projectContainer__codeBtn"
                     >
                       Code
