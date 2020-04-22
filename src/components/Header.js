@@ -11,7 +11,7 @@ export default function Header() {
         author,
         skills,
         description,
-        accounts: { github },
+        accounts: { github, freelancer },
       },
     },
   } = useStaticQuery(graphql`
@@ -30,6 +30,7 @@ export default function Header() {
           skills
           accounts {
             github
+            freelancer
           }
         }
       }
@@ -69,7 +70,10 @@ export default function Header() {
                   </li>
                 ))}
               </ul> */}
-              <a href="#!" className="text-white uppercase header__hireMeBtn">
+              <a
+                href={freelancer}
+                className="text-white uppercase header__hireMeBtn"
+              >
                 Hire Me
               </a>
             </div>
