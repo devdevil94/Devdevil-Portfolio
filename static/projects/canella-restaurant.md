@@ -5,7 +5,7 @@ img: ../images/canella-restaurant-hero.png
 url: https://devdevil94.github.io/Canella-Restaurant
 repo: https://github.com/devdevil94/Canella-Restaurant
 description: >-
-  This is a website for a fictional Italian restaurant.
+  The website is a landing page for an Italian restaurant.
 tech:
   - JavaScript
   - JQuery
