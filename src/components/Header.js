@@ -16,7 +16,7 @@ export default function Header() {
     },
   } = useStaticQuery(graphql`
     query {
-      avatar: file(relativePath: { eq: "myAvatar.png" }) {
+      avatar: file(relativePath: { eq: "portfolio_avatar.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300, maxHeight: 300) {
             ...GatsbyImageSharpFluid
